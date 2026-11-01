@@ -25,6 +25,24 @@ const server = http.createServer((req, res) => {
     reqPath = '/index.html';
   }
 
+  if (req.method === 'POST' && reqPath === '/save-image') {
+    let body = '';
+    req.on('data', chunk => body += chunk);
+    req.on('end', () => {
+      try {
+        const { filename, base64 } = JSON.parse(body);
+        const data = base64.replace(/^data:image\/\w+;base64,/, '');
+        fs.writeFileSync(path.join(BASE_DIR, 'assets', filename), Buffer.from(data, 'base64'));
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: true, file: filename }));
+      } catch (e) {
+        res.writeHead(500);
+        res.end(e.message);
+      }
+    });
+    return;
+  }
+
   const filePath = path.join(BASE_DIR, reqPath);
 
   // Security check: ensure path stays within base directory

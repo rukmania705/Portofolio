@@ -421,7 +421,7 @@ ul {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 16px;
 }
 
@@ -901,10 +901,9 @@ ul {
   line-height: 1.55;
 }
 
-/* 9. SERTIFIKAT PROFESI */
 .cert-grid-simple {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
@@ -1014,7 +1013,7 @@ ul {
 /* 10. KEAHLIAN */
 .skills-grid-simple {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
