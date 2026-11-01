@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rukmania | Portofolio - S1 Sistem Informasi & Analis Program BNSP</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portofolio resmi Rukmania - Lulusan S1 Sistem Informasi UBSI (IPK 3.79 Cum Laude), Analis Program Bersertifikat BNSP, TOEFL 557, dan Alumna Magang PT Transportasi Gas Indonesia.">
+  <meta name="keywords" content="Rukmania, Portofolio, Sistem Informasi, UBSI, MagangHub, Analis Program, BNSP, Transgasindo">
+  <meta name="author" content="Rukmania">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rukmania | Portofolio S1 Sistem Informasi">
+  <meta property="og:description" content="Lulusan S1 Sistem Informasi UBSI (IPK 3.79 Cum Laude) & Analis Program BNSP. Lihat karya video dan unduh CV ATS.">
+  <meta property="og:image" content="assets/rukmania-profile.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Toast Notifikasi Salin Email -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- HEADER / NAVIGASI -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <img src="assets/rukmania-profile.jpg" alt="Foto Rukmania" class="nav-avatar">
+        <span class="nav-title">Rukmania<span class="dot">.</span></span>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#profil" class="nav-link">Tentang</a>
+        <a href="#pendidikan" class="nav-link">Pendidikan</a>
+        <a href="#pengalaman" class="nav-link">Pengalaman</a>
+        <a href="#proyek-web" class="nav-link">Proyek Web</a>
+        <a href="#karya" class="nav-link">Karya Video</a>
+        <a href="#sertifikasi" class="nav-link">Sertifikat</a>
+        <a href="#keahlian" class="nav-link">Keahlian</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+
+      <!-- Tombol Aksi Cepat -->
+      <div class="nav-actions">
+        <a href="assets/CV_ATS_RUKMANIA.pdf" download="CV_ATS_RUKMANIA.pdf" class="btn btn-outline btn-sm">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Unduh CV</span>
+        </a>
+        <a href="https://wa.me/6281227254584?text=Halo%20Rukmania,%20kami%20tertarik%20dengan%20profil%20Anda." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+          <span>Chat WA</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Buka Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION (PROFIL UTAMA) -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-layout">
+        
+        <!-- Foto Profil -->
+        <div class="hero-photo-wrap">
+          <div class="photo-card">
+            <img src="assets/rukmania-profile.jpg" alt="Foto Resmi Rukmania" class="hero-img">
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              <span>Siap Magang / Kerja</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teks Perkenalan -->
+        <div class="hero-text-wrap" id="profil">
+          <div class="role-badge">S1 Sistem Informasi &bull; Analis Program BNSP</div>
+          <h1 class="hero-name">Rukmania (Nia)</h1>
+          <p class="hero-bio">
+            Lulusan Sarjana (S1) <strong>Sistem Informasi</strong> dari Universitas Bina Sarana Informatika dengan predikat 
+            <span class="badge-text-gold">Cum Laude (IPK 3.79/4.00)</span> dan skor <span class="badge-text-blue">TOEFL 557</span>. 
+            Bersertifikasi resmi <strong>Analis Program (BNSP)</strong>, pengembang website e-commerce live 
+            <a href="https://dodolhajiimang.my.id/" target="_blank" rel="noopener" class="text-blue underline"><strong>dodolhajiimang.my.id</strong></a>, 
+            serta alumni magang produksi media korporat di <strong>PT Transportasi Gas Indonesia (Transgasindo)</strong>.
+          </p>
+
+          <!-- 3 Tombol Utama Langsung -->
+          <div class="hero-buttons">
+            <a href="https://wa.me/6281227254584?text=Halo%20Rukmania,%20kami%20dari%20rekruter%20ingin%20mengajak%20Anda%20bergabung." target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span>Hubungi via WhatsApp</span>
+            </a>
+            <a href="mailto:rukmania705@gmail.com" class="btn btn-outline btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>Kirim Email</span>
+            </a>
+            <a href="assets/CV_ATS_RUKMANIA.pdf" download="CV_ATS_RUKMANIA.pdf" class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download CV ATS (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. DATA UTAMA (RINGKAS & MUDAH DILIHAT) -->
+    <section class="section section-stats">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <div class="stat-box">
+            <span class="stat-icon">🎓</span>
+            <div class="stat-content">
+              <div class="stat-number">3.79 <span class="stat-unit">/ 4.00</span></div>
+              <div class="stat-title">IPK (Cum Laude)</div>
+              <div class="stat-desc">S1 Sistem Informasi UBSI</div>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <span class="stat-icon">📜</span>
+            <div class="stat-content">
+              <div class="stat-number">BNSP</div>
+              <div class="stat-title">Sertifikasi Profesi</div>
+              <div class="stat-desc">Analis Program Resmi</div>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <span class="stat-icon">💻</span>
+            <div class="stat-content">
+              <div class="stat-number">Web Live</div>
+              <div class="stat-title">dodolhajiimang.my.id</div>
+              <div class="stat-desc">Aplikasi E-Commerce UMKM</div>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <span class="stat-icon">🏢</span>
+            <div class="stat-content">
+              <div class="stat-number">TGI</div>
+              <div class="stat-title">PT Transportasi Gas Indonesia</div>
+              <div class="stat-desc">Magang Komunikasi &amp; Media</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PENDIDIKAN -->
+    <section class="section" id="pendidikan">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Pendidikan Formal</h2>
+          <p class="section-desc">Riwayat pendidikan dan capaian akademik resmi.</p>
+        </div>
+
+        <div class="card card-education">
+          <div class="card-header-row">
+            <div>
+              <h3 class="card-title">Sarjana Komputer (S1) - Sistem Informasi</h3>
+              <h4 class="card-subtitle">Universitas Bina Sarana Informatika (UBSI), Jakarta</h4>
+            </div>
+            <div class="period-badge">2022 &ndash; 2026 (Fresh Graduate)</div>
+          </div>
+
+          <div class="edu-details-grid">
+            <div class="edu-item">
+              <span class="edu-label">Predikat Kelulusan:</span>
+              <strong class="text-gold">Dengan Pujian (Cum Laude) &bull; IPK 3.79</strong>
+            </div>
+            <div class="edu-item">
+              <span class="edu-label">Kemampuan Bahasa:</span>
+              <strong class="text-blue">TOEFL Score 557 (Listening 57, Reading 57, Structure 53)</strong>
+            </div>
+            <div class="edu-item full-width">
+              <span class="edu-label">Fokus Pembelajaran:</span>
+              <p class="edu-p">
+                Analisis &amp; Perancangan Sistem Informasi, Manajemen Basis Data &amp; SQL, Rekayasa Perangkat Lunak, 
+                Pengujian Software, serta Komunikasi Bisnis &amp; Publikasi Digital.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-actions-row">
+            <a href="assets/CV_ATS_RUKMANIA.pdf" target="_blank" class="btn btn-outline btn-sm">
+              <span>📄 Buka Berkas Lengkap (SKL &amp; CV PDF)</span>
+            </a>
+            <button class="btn btn-outline btn-sm view-doc-btn" data-img="assets/cert-toefl.jpg" data-title="Sertifikat TOEFL Skor 557">
+              <span>🌐 Lihat Sertifikat TOEFL</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PENGALAMAN MAGANG KERJA -->
+    <section class="section" id="pengalaman">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Pengalaman Kerja &amp; Magang</h2>
+          <p class="section-desc">Pengalaman langsung di lingkungan perusahaan nasional.</p>
+        </div>
+
+        <div class="card card-experience">
+          <div class="card-header-row">
+            <div>
+              <h3 class="card-title">Corporate Communication &amp; Media Documentation Intern</h3>
+              <h4 class="card-subtitle">PT Transportasi Gas Indonesia (Transgasindo / TGI)</h4>
+            </div>
+            <div class="period-badge">Divisi Komunikasi Korporat</div>
+          </div>
+
+          <p class="exp-summary">
+            Mendukung pembuatan media komunikasi korporat untuk kebutuhan publikasi internal dan eksternal, 
+            mengelola dokumentasi audio-visual operasional perusahaan, serta berkoordinasi lintas divisi.
+          </p>
+
+          <h5 class="points-heading">Tugas &amp; Hasil Kerja Nyata:</h5>
+          <ul class="points-list">
+            <li>
+              <strong>Produksi Video Majalah Korporat (Energezine Vol. 4-5)</strong>: Mengumpulkan liputan, menyusun naskah, mengedit video, dan merilis buletin video resmi perusahaan.
+            </li>
+            <li>
+              <strong>Pembuatan Motion Graphic &amp; Intro Bumper</strong>: Merancang animasi logo pembuka untuk meningkatkan standar visual presentasi dan publikasi korporat.
+            </li>
+            <li>
+              <strong>Dokumentasi Kegiatan Korporat</strong>: Mengarsipkan dan mengelola aset media digital kegiatan operasional infrastruktur gas bumi.
+            </li>
+          </ul>
+
+          <div class="tags-row">
+            <span class="tag">Video Editing</span>
+            <span class="tag">Motion Graphic</span>
+            <span class="tag">Corporate Communication</span>
+            <span class="tag">Dokumentasi Media</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROYEK APLIKASI WEB LIVE (DODOL HAJI IMANG) -->
+    <section class="section" id="proyek-web">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="live-pill-inline">
+            <span class="pulse-dot"></span>
+            <span>Aplikasi Produksi Nyata &bull; Live Online</span>
+          </div>
+          <h2 class="section-title">Proyek Aplikasi Web: Dodol Haji Imang</h2>
+          <p class="section-desc">
+            Perancangan, analisis sistem, dan pengembangan platform e-commerce UMKM kuliner khas Betawi yang aktif beroperasi di <a href="https://dodolhajiimang.my.id/" target="_blank" rel="noopener" class="text-blue underline"><strong>dodolhajiimang.my.id</strong></a>.
+          </p>
+        </div>
+
+        <div class="card card-web-project">
+          <div class="card-header-row">
+            <div>
+              <div class="web-domain-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>dodolhajiimang.my.id</span>
+              </div>
+              <h3 class="card-title">E-Commerce &amp; Sistem Kalkulasi Pesanan Dodol Betawi Haji Imang</h3>
+              <h4 class="card-subtitle">Peran: Analis Sistem &amp; Web Developer (Full Development Lifecycle)</h4>
+            </div>
+            <div class="web-action-direct">
+              <a href="https://dodolhajiimang.my.id/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <span>Kunjungi Website Live</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pratinjau Tampilan Web -->
+          <div class="web-preview-grid">
+            <div class="web-preview-card view-doc-btn" data-img="assets/project-dodol.jpg" data-title="Website Dodol Haji Imang - Halaman Utama &amp; Katalog">
+              <div class="preview-img-wrap">
+                <img src="assets/project-dodol.jpg" alt="Tampilan Web Dodol Haji Imang" class="preview-img">
+                <div class="zoom-badge">🔍 Klik untuk Perbesar</div>
+              </div>
+              <div class="preview-caption">
+                <strong>Halaman Beranda &amp; Katalog Online</strong>
+                <span>Etalase digital produk dodol original, wijen, ketan hitam, dan kemasan besek.</span>
+              </div>
+            </div>
+
+            <div class="web-preview-card view-doc-btn" data-img="assets/project-dodol-hampers.jpg" data-title="Fitur Rakit Hampers &amp; Kalkulator Hajatan Betawi">
+              <div class="preview-img-wrap">
+                <img src="assets/project-dodol-hampers.jpg" alt="Fitur Rakit Hampers Dodol Haji Imang" class="preview-img">
+                <div class="zoom-badge">🔍 Klik untuk Perbesar</div>
+              </div>
+              <div class="preview-caption">
+                <strong>Fitur Interaktif: Rakit Hampers &amp; Kalkulator Hajatan</strong>
+                <span>Kustomisasi paket seserahan adat dan kalkulasi otomatis porsi hajatan berdasarkan tamu.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Latar Belakang & Pemecahan Masalah -->
+          <div class="web-description-block">
+            <h5 class="points-heading">Latar Belakang &amp; Solusi Sistem:</h5>
+            <p class="exp-summary">
+              UMKM Dodol Betawi Haji Imang (Bekasi) sebelumnya mengalami kendala pesanan manual yang memakan waktu: pelanggan sering bingung menghitung kebutuhan dodol untuk hajatan/seserahan, perhitungan ongkir ke luar kota lambat, dan format pesanan chat sering tidak lengkap. Rukmania menganalisis proses bisnis ini dan membangun sistem web terpadu yang memecahkan masalah tersebut secara otomatis.
+            </p>
+          </div>
+
+          <!-- 4 Fitur Unggulan Sistem -->
+          <div class="web-features-grid">
+            
+            <div class="web-feature-box">
+              <div class="feature-icon">🧮</div>
+              <div class="feature-content">
+                <h6 class="feature-title">Kalkulator Hajatan &amp; Seserahan</h6>
+                <p class="feature-desc">
+                  Algoritma kalkulasi otomatis yang menghitung estimasi kilogram dodol yang dibutuhkan berdasarkan jumlah undangan pernikahan, sunatan, atau acara adat.
+                </p>
+              </div>
+            </div>
+
+            <div class="web-feature-box">
+              <div class="feature-icon">🎁</div>
+              <div class="feature-content">
+                <h6 class="feature-title">Rakit Hampers Custom (Besek Susun)</h6>
+                <p class="feature-desc">
+                  Fitur interaktif yang memungkinkan pelanggan memilih varian rasa (Original, Wijen, Ketan Hitam) dan kemasan besek bambu khas tradisi Betawi.
+                </p>
+              </div>
+            </div>
+
+            <div class="web-feature-box">
+              <div class="feature-icon">🚚</div>
+              <div class="feature-content">
+                <h6 class="feature-title">Cek Ongkos Kirim Instan</h6>
+                <p class="feature-desc">
+                  Modul pencarian tarif pengiriman langsung ke 25+ kota se-Indonesia dengan estimasi berat dan hari tiba tanpa perlu chat admin terlebih dahulu.
+                </p>
+              </div>
+            </div>
+
+            <div class="web-feature-box">
+              <div class="feature-icon">💬</div>
+              <div class="feature-content">
+                <h6 class="feature-title">WhatsApp Direct Checkout</h6>
+                <p class="feature-desc">
+                  Formulir pemesanan yang otomatis memformat rincian order, total harga, alamat kirim, dan varian pesanan langsung ke nomor WhatsApp pemilik usaha.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Tech Stack & Kompetensi Digunakan -->
+          <div class="web-meta-row">
+            <span class="meta-label">Kompetensi &amp; Teknologi:</span>
+            <div class="tags-row">
+              <span class="tag">Analisis Kebutuhan Sistem (SRS)</span>
+              <span class="tag">Perancangan UI/UX Mobile-First</span>
+              <span class="tag">HTML5 &bull; CSS3 &bull; JavaScript</span>
+              <span class="tag">Algoritma Logika Perhitungan</span>
+              <span class="tag">Integrasi WhatsApp API</span>
+              <span class="tag">Manajemen Domain &amp; Web Hosting</span>
+            </div>
+          </div>
+
+          <div class="card-actions-row" style="margin-top: 24px;">
+            <a href="https://dodolhajiimang.my.id/" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>Buka Website dodolhajiimang.my.id</span>
+            </a>
+            <a href="https://wa.me/6281227254584?text=Halo%20Rukmania,%20saya%20melihat%20proyek%20web%20dodolhajiimang.my.id%20dan%20tertarik%20berdiskusi." target="_blank" rel="noopener" class="btn btn-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span>Diskusikan Proyek via WA</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. KARYA VIDEO PROYEK (LANGSUNG TAMPIL & BISA DIPUTAR) -->
+    <section class="section" id="karya">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Karya Video Proyek Nyata</h2>
+          <p class="section-desc">Video hasil kerja selama magang yang dapat langsung Anda putar di bawah ini.</p>
+        </div>
+
+        <div class="video-grid">
+          
+          <!-- Video 1 -->
+          <div class="card card-video">
+            <div class="video-player-box">
+              <video controls preload="metadata" playsinline class="video-elem">
+                <source src="assets/energezine-publication.mp4" type="video/mp4">
+                Browser tidak mendukung tag video.
+              </video>
+            </div>
+            <div class="video-info">
+              <span class="category-pill">Video Buletin Korporat</span>
+              <h3 class="video-title">Energezine Volume 4-5 &ndash; PT Transgasindo</h3>
+              <p class="video-desc">
+                Video majalah internal yang merangkum berita kegiatan kerja, pencapaian operasional, dan pesan manajemen perusahaan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="card card-video">
+            <div class="video-player-box">
+              <video controls preload="metadata" playsinline class="video-elem">
+                <source src="assets/bumper-intro.mp4" type="video/mp4">
+                Browser tidak mendukung tag video.
+              </video>
+            </div>
+            <div class="video-info">
+              <span class="category-pill">Motion Graphic &amp; Branding</span>
+              <h3 class="video-title">Bumper Video &amp; Opening Intro Korporat</h3>
+              <p class="video-desc">
+                Animasi logo pembuka resmi dengan efek transisi kinetik untuk presentasi dan media publikasi digital perusahaan.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SERTIFIKASI RESMI -->
+    <section class="section" id="sertifikasi">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Sertifikasi &amp; Lisensi Profesi</h2>
+          <p class="section-desc">Bukti kompetensi resmi yang diakui secara nasional. Klik gambar untuk melihat ukuran penuh.</p>
+        </div>
+
+        <div class="cert-grid-simple">
+          
+          <!-- Sertifikat BNSP Depan -->
+          <div class="card card-cert">
+            <div class="cert-thumb-box view-doc-btn" data-img="assets/cert-bnsp-front.jpg" data-title="Sertifikat Kompetensi BNSP - Analis Program (Depan)">
+              <img src="assets/cert-bnsp-front.jpg" alt="Sertifikat BNSP Depan" class="cert-thumb-img">
+              <div class="zoom-badge">🔍 Perbesar</div>
+            </div>
+            <div class="cert-info">
+              <span class="cert-badge-red">BNSP RI Resmi</span>
+              <h3 class="cert-name">Sertifikat Kompetensi: Analis Program</h3>
+              <p class="cert-details">
+                <strong>No: 62010 2514 0005731 2025</strong><br>
+                Bidang: Pengembang Perangkat Lunak (Software Development). Diterbitkan oleh Badan Nasional Sertifikasi Profesi melalui LSP UBSI.
+              </p>
+            </div>
+          </div>
+
+          <!-- Sertifikat BNSP Belakang (10 Unit) -->
+          <div class="card card-cert">
+            <div class="cert-thumb-box view-doc-btn" data-img="assets/cert-bnsp-back.jpg" data-title="Daftar 10 Unit Kompetensi BNSP (Belakang)">
+              <img src="assets/cert-bnsp-back.jpg" alt="10 Unit Kompetensi BNSP" class="cert-thumb-img">
+              <div class="zoom-badge">🔍 Perbesar</div>
+            </div>
+            <div class="cert-info">
+              <span class="cert-badge-blue">10 Unit Teruji</span>
+              <h3 class="cert-name">Daftar Unit Kompetensi BNSP</h3>
+              <p class="cert-details">
+                Mencakup: Analisis Skalabilitas, Penggunaan SQL, Akses Basis Data, Algoritma, Debugging, Code Review, dan Pengujian Program.
+              </p>
+            </div>
+          </div>
+
+          <!-- Sertifikat TOEFL -->
+          <div class="card card-cert">
+            <div class="cert-thumb-box view-doc-btn" data-img="assets/cert-toefl.jpg" data-title="Sertifikat TOEFL Skor 557">
+              <img src="assets/cert-toefl.jpg" alt="Sertifikat TOEFL" class="cert-thumb-img">
+              <div class="zoom-badge">🔍 Perbesar</div>
+            </div>
+            <div class="cert-info">
+              <span class="cert-badge-green">Skor Resmi: 557</span>
+              <h3 class="cert-name">Sertifikat Bahasa Inggris (TOEFL)</h3>
+              <p class="cert-details">
+                <strong>Lembaga Bahasa UBSI (Agustus 2026)</strong><br>
+                Listening: 57 &bull; Structure: 53 &bull; Reading: 57. Siap bekerja di lingkungan profesional bilingual.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. KEAHLIAN UTAMA -->
+    <section class="section" id="keahlian">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Keahlian &amp; Keterampilan</h2>
+          <p class="section-desc">Kombinasi keahlian teknis dan kemampuan komunikasi yang siap digunakan di dunia kerja.</p>
+        </div>
+
+        <div class="skills-grid-simple">
+          
+          <div class="card skill-card">
+            <h3 class="skill-group-title">💻 Analisis Sistem &amp; Software</h3>
+            <ul class="simple-check-list">
+              <li>Analisis Sistem &amp; Diagram UML (Use Case, Activity, Sequence)</li>
+              <li>Manajemen Basis Data &amp; Query SQL (MySQL, Relasional)</li>
+              <li>Software Debugging &amp; Pengujian Unit Program</li>
+              <li>Dokumentasi Teknis &amp; Alur Proses Bisnis</li>
+              <li>Dasar Pemrograman Web (HTML, CSS, JavaScript)</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card">
+            <h3 class="skill-group-title">🎥 Media &amp; Komunikasi Visual</h3>
+            <ul class="simple-check-list">
+              <li>Video Editing &amp; Compiling Publikasi Korporat</li>
+              <li>Pembuatan Motion Graphic &amp; Intro Logo Bumper</li>
+              <li>Desain Layout Buletin &amp; Infografis (Canva / Adobe)</li>
+              <li>Sinkronisasi Audio Narasi &amp; Voiceover</li>
+              <li>Manajemen Aset Media &amp; Publikasi Digital</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card">
+            <h3 class="skill-group-title">🤝 Soft Skills &amp; Kerja Sama</h3>
+            <ul class="simple-check-list">
+              <li>Cepat Belajar &amp; Mudah Beradaptasi (Fast Learner)</li>
+              <li>Bahasa Inggris Aktif &amp; Pasif (Skor TOEFL 557)</li>
+              <li>Koordinasi &amp; Komunikasi Lintas Divisi</li>
+              <li>Manajemen Waktu &amp; Penyelesaian Sesuai Deadline</li>
+              <li>Disiplin, Teliti, dan Bertanggung Jawab</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. KONTAK & REACHOUT (MUDAH & LANGSUNG) -->
+    <section class="section section-contact" id="kontak">
+      <div class="container">
+        <div class="contact-box-simple">
+          
+          <div class="contact-header-simple">
+            <h2 class="contact-main-title">Mari Terhubung &amp; Jadwalkan Wawancara</h2>
+            <p class="contact-main-desc">
+              Saya sangat terbuka untuk peluang magang melalui <strong>MagangHub Kemendikbud/BUMN</strong>, posisi Analis Sistem, IT Support, maupun divisi Komunikasi/Media di perusahaan Anda.
+            </p>
+          </div>
+
+          <!-- Baris Kontak Utama -->
+          <div class="contact-methods">
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/6281227254584?text=Halo%20Rukmania,%20kami%20tertarik%20dengan%20profil%20Anda." target="_blank" rel="noopener" class="contact-method-card wa-card">
+              <div class="method-icon wa-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              </div>
+              <div class="method-text">
+                <span class="method-label">WhatsApp (Respon Cepat)</span>
+                <span class="method-val">0812-2725-4584</span>
+              </div>
+              <span class="method-action">Chat Sekarang &rarr;</span>
+            </a>
+
+            <!-- Email -->
+            <div class="contact-method-card mail-card">
+              <div class="method-icon mail-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div class="method-text">
+                <span class="method-label">Email</span>
+                <a href="mailto:rukmania705@gmail.com" class="method-val">rukmania705@gmail.com</a>
+              </div>
+              <button class="copy-pill-btn" id="btn-copy-email" data-copy="rukmania705@gmail.com">
+                <span>Salin Email</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Tombol Download CV Besar -->
+          <div class="contact-cv-wrap">
+            <a href="assets/CV_ATS_RUKMANIA.pdf" download="CV_ATS_RUKMANIA.pdf" class="btn btn-primary btn-block btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Unduh Berkas Lengkap: CV Format ATS (PDF)</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-title">Rukmania &bull; S1 Sistem Informasi UBSI</div>
+      <p class="footer-copy">&copy; 2026 Rukmania. Portofolio pribadi untuk pendaftaran MagangHub &amp; rekrutmen profesional.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL VIEWER GAMBAR SERTIFIKAT -->
+  <div class="modal" id="doc-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-box">
+      <div class="modal-top">
+        <h4 class="modal-heading" id="modal-title">Pratinjau Dokumen</h4>
+        <button class="modal-close" id="modal-close" aria-label="Tutup">&times;</button>
+      </div>
+      <div class="modal-content-img">
+        <img src="" alt="Pratinjau Dokumen" id="modal-img">
+      </div>
+      <div class="modal-bottom">
+        <a href="" download id="modal-download" class="btn btn-sm btn-outline">Unduh Gambar Asli</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

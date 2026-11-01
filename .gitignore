@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Temporary extraction files
+assets/extracted_*.jpg
+assets/img_*.jpg
+
+# Duplicate unorganized media in root (clean copies are in assets/)
+/Energezine Volume 4-5 (1).mp4
+/bumper video (1).mp4
+/CV_ATS_RUKMANIA.pdf
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
