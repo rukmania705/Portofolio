@@ -44,10 +44,13 @@ portfolio-rukmania/
 │   │   ├── project-3.jpg
 │   │   └── project-4.jpg
 │   ├── certificates/
-│   │   ├── cert-toefl.jpg
-│   │   ├── cert-toefl.pdf
+│   │   ├── cert-toefl.jpg & .pdf
 │   │   ├── cert-bnsp.jpg
-│   │   └── cert-kemnaker.jpg
+│   │   ├── cert-kemnaker.jpg, -back.jpg & .pdf (Generative AI 200 JP)
+│   │   ├── cert-bootcamp-sentul.jpg & .pdf (IT Bootcamp Sentul)
+│   │   ├── cert-workshop-bootcamp.jpg & .pdf (Workshop IT Bootcamp)
+│   │   ├── cert-seminar-digital.jpg & .pdf (Seminar Transformasi Digital)
+│   │   └── cert-seminar-karir.jpg & .pdf (Seminar Karir UBSI)
 │   ├── cv/
 │   │   └── CV-Rukmania.pdf
 │   └── [activity photos & videos]
