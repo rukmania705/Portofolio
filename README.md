@@ -1,47 +1,78 @@
-# Portofolio Rukmania (Nia) 🎓
+# Personal Portfolio Website — Rukmania 🌸
 
-> **Lulusan Sarjana (S1) Sistem Informasi &bull; Analis Program Bersertifikat BNSP**  
-> Universitas Bina Sarana Informatika (UBSI), Jakarta &bull; IPK 3.79 (*Cum Laude*) &bull; TOEFL 557
+> **S1 Sistem Informasi — Universitas Bina Sarana Informatika (UBSI)**  
+> *Cum Laude (IPK 3.79)* &bull; *Skor TOEFL 557* &bull; *Alumna Magang PT Transportasi Gas Indonesia (TGI)*
 
----
-
-## 🌟 Tentang Portofolio
-Website portofolio resmi profesional **Rukmania** yang dirancang dengan tata visual terang, bersih, modern, dan mudah dipahami untuk kebutuhan rekrutmen MagangHub, BUMN, dan perusahaan nasional.
-
-Portofolio ini menampilkan rekam jejak akademik, sertifikasi kompetensi profesi resmi dari Badan Nasional Sertifikasi Profesi (BNSP), proyek pengembangan web aplikasi e-commerce UMKM yang sedang live (*dodolhajiimang.my.id*), serta hasil karya produksi media korporat selama magang di **PT Transportasi Gas Indonesia (Transgasindo / TGI)**.
+Website Personal Portfolio estetik, elegan, feminin, dan profesional yang dibangun dengan **HTML5, CSS3, dan Vanilla JavaScript murni** tanpa framework berat. Dirancang secara khusus untuk kebutuhan melamar pekerjaan korporat, rekrutmen BUMN, tech companies, dan MagangHub.
 
 ---
 
-## 🚀 Fitur & Proyek Unggulan
+## 🎨 Konsep Desain & Estetika UI/UX
 
-### 1. 🌐 Proyek Aplikasi Web Live: [dodolhajiimang.my.id](https://dodolhajiimang.my.id/)
-- **Peran**: Analis Sistem & Web Developer (Full Development Lifecycle).
-- **Studi Kasus**: Solusi digitalisasi proses pemesanan dan katalog produk UMKM produsen Dodol Betawi Asli Haji Imang (Bekasi).
-- **Fitur Interaktif Utama**:
-  - 🧮 **Kalkulator Hajatan & Seserahan Otomatis**: Algoritma kalkulasi kebutuhan porsi dodol (kg) berdasarkan jumlah undangan acara pernikahan atau adat.
-  - 🎁 **Rakit Hampers Custom (Besek Susun)**: Fitur kustomisasi paket seserahan bambu dan varian rasa (Original, Wijen, Ketan Hitam).
-  - 🚚 **Cek Ongkos Kirim Instan**: Database tarif pengiriman ke 25+ kota se-Indonesia secara langsung.
-  - 💬 **WhatsApp Direct Checkout**: Integrasi form pesanan yang merapikan data transaksi langsung ke admin.
-
-### 2. 🎥 Karya Media & Komunikasi Korporat (PT Transportasi Gas Indonesia)
-- **Energezine Publication Vol. 4-5**: Video majalah internal yang merangkum berita kegiatan kerja, pencapaian operasional, dan arahan manajemen perusahaan.
-- **Corporate Logo Intro Bumper**: Animasi logo kinetik motion graphic untuk standar visual presentasi dan publikasi korporat.
-
-### 3. 📜 Bukti Dokumen & Sertifikasi Resmi
-- **Sertifikat BNSP Analis Program**: No. 62010 2514 0005731 2025 (10 Unit Kompetensi Pengembang Perangkat Lunak).
-- **Sertifikat Bahasa Inggris (TOEFL)**: Skor 557 (Lembaga Bahasa UBSI).
-- **Surat Keterangan Lulus (SKL) Resmi**: Sarjana Komputer (S.Kom) UBSI dengan predikat *Dengan Pujian (Cum Laude)*.
+- **Konsep**: Modern Minimalist Portfolio, Pastel Aesthetic Design, Elegant Feminine Editorial Layout.
+- **Palet Warna**:
+  - `Pastel Blue`: `#DCE9F5`
+  - `Soft Pink`: `#F7DCE8`
+  - `Cream White`: `#FAF8FC`
+  - `Light Lilac`: `#E9E2F5`
+  - `Soft Green`: `#E2EEE6`
+  - `Dark Navy`: `#34364C`
+  - `Accent Pink`: `#C978A0`
+- **Tipografi**:
+  - Headings / Judul: *Playfair Display*
+  - Body Text: *Plus Jakarta Sans* / *DM Sans*
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
-- **Frontend**: Semantic HTML5, Vanilla CSS3 (Custom Responsive Design System & Light Theme), Vanilla JavaScript.
-- **Tooling**: Pure CommonJS Node.js script (`extract.cjs`) untuk ekstraksi gambar JPEG dari stream biner dokumen PDF.
-- **Local Server**: Pure Node.js HTTP server (`serve.cjs`) dengan dukungan HTTP 206 Partial Content Range Requests untuk video streaming.
+## 📂 Struktur Folder Proyek
+
+```
+portfolio-rukmania/
+│
+├── index.html
+├── style.css
+├── script.js
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── assets/
+│   ├── images/
+│   │   ├── profile.jpg
+│   │   ├── project-1.jpg
+│   │   ├── project-2.jpg
+│   │   ├── project-3.jpg
+│   │   └── project-4.jpg
+│   ├── certificates/
+│   │   ├── cert-toefl.jpg
+│   │   ├── cert-toefl.pdf
+│   │   ├── cert-bnsp.jpg
+│   │   └── cert-kemnaker.jpg
+│   ├── cv/
+│   │   └── CV-Rukmania.pdf
+│   └── [activity photos & videos]
+│
+└── README.md
+```
 
 ---
 
-## 💻 Menjalankan Secara Lokal
+## ✨ Fitur & Interaktivitas
+
+1. **Sticky Navbar & Glassmorphism**: Navigasi atas tetap terlihat saat digulir dengan efek blur halus.
+2. **Scrollspy Active Navigation**: Indikator menu navigasi otomatis menyesuaikan dengan section yang sedang aktif di layar.
+3. **Scroll Reveal Animation**: Efek kemunculan konten yang halus dan lembut (*smooth reveal*) berbasis `IntersectionObserver`.
+4. **Universal Lightbox Modal**: Modal pop-up responsif untuk memperbesar foto dokumentasi kegiatan kerja, karya proyek, sertifikat, dan pemutar video HTML5.
+5. **Interactive Project Cards**: Card proyek modern dengan tag kompetensi, efek hover elevasi, dan tombol aksi detail.
+6. **One-Click Email Copy**: Menyalin alamat email ke clipboard dengan notifikasi toast visual yang anggun.
+7. **Formulir Kontak Cepat ke WhatsApp**: Form pesan interaktif yang memformat pesan otomatis langsung ke nomor WhatsApp resmi.
+8. **Dark / Light Mode Switcher**: Fitur tema opsional dengan penyimpanan status preferensi di `localStorage`.
+9. **Unduh CV Cepat (ATS Format)**: Akses instan mengunduh CV format PDF yang telah dioptimalkan untuk sistem ATS rekruter.
+10. **Desain Mobile-First & Responsif Penuh**: Tata letak menyesuaikan secara proporsional di seluruh ukuran layar desktop, laptop, tablet, dan smartphone.
+
+---
+
+## 🚀 Cara Menjalankan Secara Lokal
 
 1. **Clone repositori**:
    ```bash
@@ -51,12 +82,10 @@ Portofolio ini menampilkan rekam jejak akademik, sertifikasi kompetensi profesi 
 
 2. **Jalankan server lokal**:
    ```bash
-   npm start
-   # atau
    node serve.cjs
    ```
 
-3. **Buka di browser**:
+3. **Buka di peramban**:
    Akses `http://localhost:3000`
 
 ---
@@ -64,4 +93,7 @@ Portofolio ini menampilkan rekam jejak akademik, sertifikasi kompetensi profesi 
 ## 📬 Kontak & Hubungan Kerja
 - **WhatsApp**: [0812-2725-4584](https://wa.me/6281227254584)
 - **Email**: [rukmania705@gmail.com](mailto:rukmania705@gmail.com)
-- **Lokasi**: DKI Jakarta & Sekitarnya
+- **LinkedIn**: [linkedin.com/in/rukmania](https://www.linkedin.com/in/rukmania)
+- **GitHub**: [github.com/rukmania705](https://github.com/rukmania705)
+
+&copy; 2026 Rukmania. All Rights Reserved.
