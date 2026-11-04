@@ -134,13 +134,14 @@ ul {
   text-underline-offset: 3px;
 }
 
-/* 2. NAVBAR (TERANG & BERSIH) */
+/* 2. NAVBAR (TERANG, BERSIH & BEBAS TABRAKAN) */
 .navbar {
   position: sticky;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   z-index: 100;
@@ -154,15 +155,18 @@ ul {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: var(--container);
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
+  gap: 16px;
 }
 
 .nav-brand {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
+  text-decoration: none;
 }
 
 .nav-avatar {
@@ -173,6 +177,7 @@ ul {
   object-position: top;
   border: 2px solid var(--color-blue);
   box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
 }
 
 .nav-title {
@@ -181,6 +186,8 @@ ul {
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: -0.02em;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .dot {
@@ -190,14 +197,16 @@ ul {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 14px;
+  margin: 0 auto;
 }
 
 .nav-link {
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   color: var(--text-secondary);
   font-weight: 600;
-  padding: 6px 0;
+  padding: 6px 4px;
+  white-space: nowrap;
   transition: color 0.15s ease;
 }
 
@@ -209,14 +218,20 @@ ul {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .nav-toggle {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 28px;
-  height: 20px;
+  width: 26px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 101;
 }
 
 .nav-toggle span {
@@ -224,6 +239,19 @@ ul {
   height: 2.5px;
   background: var(--text-primary);
   border-radius: 2px;
+  transition: all 0.25s ease;
+}
+
+.nav-toggle.active span:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
 }
 
 /* 3. BUTTONS (JELAS & RESPONSIF) */
@@ -1448,6 +1476,66 @@ ul {
 }
 
 /* 15. RESPONSIVE BREAKPOINTS */
+
+/* Layar Laptop Menengah (1041px - 1180px) */
+@media (max-width: 1180px) {
+  .nav-menu {
+    gap: 10px;
+  }
+  .nav-link {
+    font-size: 0.82rem;
+    padding: 6px 2px;
+  }
+  .nav-actions .btn-sm {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablet & Layar Kompak (<= 1040px) - Beralih ke Menu Drawer */
+@media (max-width: 1040px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    flex-direction: column;
+    padding: 16px 24px 24px;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-lg);
+    gap: 4px;
+    align-items: stretch;
+    margin: 0;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    z-index: 99;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu .nav-link {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    width: 100%;
+    border-bottom: 1px solid var(--bg-subtle);
+  }
+
+  .nav-menu .nav-link:hover {
+    background: var(--bg-subtle);
+    color: var(--color-blue);
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+}
+
 @media (max-width: 992px) {
   .hero-layout {
     grid-template-columns: 1fr;
@@ -1485,14 +1573,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .nav-menu {
-    display: none;
-  }
-
-  .nav-toggle {
-    display: flex;
-  }
-
   .edu-details-grid {
     grid-template-columns: 1fr;
   }
@@ -1519,6 +1599,16 @@ ul {
 
   .web-features-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .nav-btn-cv {
+    display: none;
+  }
+
+  .nav-brand .nav-title {
+    font-size: 1.1rem;
   }
 }
 

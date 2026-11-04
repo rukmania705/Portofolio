@@ -108,35 +108,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. NAVIGASI MOBILE SEDERHANA
+  // 5. NAVIGASI MOBILE BERSIH & RESPONSIF
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
 
   if (navToggle && navMenu) {
-    navToggle.addEventListener('click', () => {
-      const isVisible = navMenu.style.display === 'flex';
-      navMenu.style.display = isVisible ? 'none' : 'flex';
-      if (!isVisible) {
-        navMenu.style.flexDirection = 'column';
-        navMenu.style.position = 'absolute';
-        navMenu.style.top = '70px';
-        navMenu.style.left = '0';
-        navMenu.style.width = '100%';
-        navMenu.style.background = '#FFFFFF';
-        navMenu.style.padding = '20px';
-        navMenu.style.borderBottom = '1px solid #E2E8F0';
-        navMenu.style.boxShadow = '0 10px 15px -3px rgba(0,0,0,0.08)';
-        navMenu.style.gap = '16px';
-      }
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
     });
 
     // Sembunyikan menu saat link diklik
     document.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-          navMenu.style.display = 'none';
-        }
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
       });
+    });
+
+    // Tutup menu drawer jika pengguna mengklik area luar navbar
+    document.addEventListener('click', (e) => {
+      if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
     });
   }
 
