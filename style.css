@@ -749,6 +749,18 @@ ul {
   border-color: var(--color-green-border);
 }
 
+.activity-tag.tag-csr {
+  color: #B45309;
+  background: #FFFBEB;
+  border-color: #FDE68A;
+}
+
+.activity-tag.tag-team {
+  color: #6D28D9;
+  background: #F5F3FF;
+  border-color: #DDD6FE;
+}
+
 .activity-title {
   font-family: var(--font-heading);
   font-size: 1.05rem;
